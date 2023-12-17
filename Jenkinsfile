@@ -1,6 +1,6 @@
 pipeline {
 
-    agent node {node { label 'workstation' }}
+    agent {node { label 'workstation' }}
 
     stages {
         stage ("Stage-1"){
