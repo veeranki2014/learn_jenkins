@@ -16,6 +16,7 @@ pipeline {
             steps {
               echo "Hello world"
               sh 'env'
+              sh 'echo APP_INPUT - $APP_INPUT'
             }
         }
     }
