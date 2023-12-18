@@ -9,6 +9,8 @@ pipeline {
       SSH = credentials("SSH")
     }
 
+    parameters { string(name: 'APP_INPUT', defaultValue: '', description: 'JUST INPUT') }
+
     stages {
         stage ("Stage-1"){
             steps {
