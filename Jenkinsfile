@@ -2,6 +2,10 @@ pipeline {
 
     agent {node { label 'workstation' }}
 
+    environment {
+      SSH = credentials("SSH")
+    }
+
     stages {
         stage ("Stage-1"){
             steps {
